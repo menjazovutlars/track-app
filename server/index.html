@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    input {
+      width: 50%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  </style>
+  <body>
+    <h1>Datenbank Test</h1>
+
+    <h2>Eingabe</h2>
+    <section style="margin-top: 20px" id="database-section">
+      <h4>Tables</h4>
+      <select id="table-select" style="min-width: 50%"></select>
+      <ul id="table-list"></ul>
+    </section>
+
+    <section
+      style="padding-top: 20px"
+      id="hiking_routes_section"
+      class="input_section"
+    >
+      <h3>Hiking Routes</h3>
+      <form name="hiking-routes-data">
+        <label for="name-hiking_routes">Hiking Route Name</label>
+        <input
+          type="text"
+          id="name-hiking_routes"
+          placeholder="hiking route name"
+        />
+        <label for="start-point-hiking_routes">Hiking Route Start Point</label>
+        <input
+          type="number"
+          id="start-point-hiking_routes"
+          placeholder="hiking route start-point"
+        />
+        <label for="end-point-hiking_routes">Hiking Route End Point</label>
+        <input
+          type="number"
+          id="end-point-hiking_routes"
+          placeholder="hiking route end-point"
+        />
+        <label for="length-hiking_routes">Hiking Route Length</label>
+        <input
+          type="number"
+          id="length-hiking_routes"
+          placeholder="hiking route length"
+        />
+        <label for="duration-hiking_routes">Hiking Route Duration</label>
+        <input
+          type="number"
+          id="duration-hiking_routes"
+          placeholder="hiking route duration"
+        />
+        <button type="button" id="insert-data-button-hiking_routes">
+          Insert Data
+        </button>
+      </form>
+      <div id="form-status-hiking_routes"></div>
+    </section>
+    <section
+      style="padding-top: 20px"
+      id="audiotracks_section"
+      class="input_section"
+    >
+      <h3>Audiotracks</h3>
+      <form name="audiotracks-data">
+        <label for="name-audiotracks">Audiotrack Name</label>
+        <input type="text" id="name-audiotracks" placeholder="name" />
+
+        <label for="duration-audiotracks">Audiotrack Duration</label>
+        <input type="number" id="duration-audiotracks" placeholder="duration" />
+        <button type="button" id="insert-data-button-audiotracks">
+          Insert Data
+        </button>
+      </form>
+      <div id="form-status-audiotracks"></div>
+    </section>
+    <section style="margin-top: 50px">
+      <table>
+        <thead>
+          <tr
+            style="text-align: left; padding-right: 20px"
+            id="table-colums"
+          ></tr>
+        </thead>
+        <tbody id="table-content"></tbody>
+      </table>
+    </section>
+  </body>
+  <script type="module" src="client.js"></script>
+</html>
