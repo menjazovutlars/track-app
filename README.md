@@ -1,9 +1,26 @@
-# Wander-Audioguide (hier kommt später ein catchy Name)
-## P3 WS 20/21 Team 1
-![cooles gif](https://media.giphy.com/media/3IFDC29z1R8tQOU5Ha/giphy.gif)
+# wanderprototyp (p3-prototyp)
 
-### Stand 14.12.2020
-- Test Datenbankanbindung
-- Proof of Concept Draft
+prototype for audioguide 
 
-![cooles gif](https://media.giphy.com/media/13HgwGsXF0aiGY/giphy-downsized.gif)
+## Install the dependencies
+```bash
+yarn
+```
+
+### Start the app in development mode (hot-code reloading, error reporting, etc.)
+```bash
+quasar dev
+```
+
+### Lint the files
+```bash
+yarn run lint
+```
+
+### Build the app for production
+```bash
+quasar build
+```
+
+### Customize the configuration
+See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
